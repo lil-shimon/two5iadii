@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// TODO: fix
+// TODO: fx
 model Post {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
