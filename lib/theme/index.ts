@@ -1,19 +1,19 @@
-import { mode } from "@chakra-ui/theme-tools";
-import { extendTheme } from "@chakra-ui/react";
+import { mode } from '@chakra-ui/theme-tools';
+import { extendTheme } from '@chakra-ui/react';
 
 /// global background colour
-const kBgLightColour = "#f0e8db";
-const kBgDarkColour = "#202023";
+const kBgLightColour = '#f0e8db';
+const kBgDarkColour = '#202023';
 
 /// link colour
-const kLinkLightColour = "#3d7aed";
-const kLinkDarkColour = "#ff63c3";
+const kLinkLightColour = '#3d7aed';
+const kLinkDarkColour = '#ff63c3';
 
 /// heading fonts
 const kHeadingFonts = "'M PLUS Rounded 1c'";
 
 /// glassTeal colour
-const kGlassTealColour = "#88ccca";
+const kGlassTealColour = '#88ccca';
 
 const styles = {
   global: (props: any) => ({
@@ -26,11 +26,11 @@ const styles = {
 const components = {
   Heading: {
     variants: {
-      "section-title": {
-        textDecoration: "underline",
+      'section-title': {
+        textDecoration: 'underline',
         fontSize: 20,
         textUnderlineOffset: 6,
-        textDecorationColor: "#525252",
+        textDecorationColor: '#525252',
         textDecorationThickness: 4,
         marginTop: 3,
         marginBottom: 4,
@@ -54,7 +54,7 @@ const colors = {
 };
 
 const config = {
-  initialColorMode: "dark",
+  initialColorMode: 'dark',
   useSystemColorMode: true,
 };
 

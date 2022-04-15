@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "lint:fix": "eslint . --ext .js,jsx,.ts,.tsx --fix",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
+    "lint": "next lint",
+    "lint:fix": "eslint --ext .js,jsx,.ts,.tsx --fix",
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
+    "precommit": "npm run lint:fix && npm run format && npm run build"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.8.8",
@@ -37,5 +38,13 @@
     "eslint-config-next": "12.1.5",
     "prisma": "^3.12.0",
     "typescript": "4.6.3"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "printWidth": 100
   }
 }

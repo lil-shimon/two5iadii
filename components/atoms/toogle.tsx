@@ -1,5 +1,5 @@
-import { useBoolean } from "@chakra-ui/react";
-import { FC } from "react";
+import { useBoolean } from '@chakra-ui/react';
+import { FC } from 'react';
 
 export const ToggleExample: FC = () => {
   const [flag, setFlag] = useBoolean();
@@ -8,12 +8,10 @@ export const ToggleExample: FC = () => {
   return (
     <>
       <p>Boolean State: {flag.toString()}</p>
-      <button onClick={setFlag.toggle}>
-        Click me to toggle the boolean state
-      </button>
+      <button onClick={setFlag.toggle}>Click me to toggle the boolean state</button>
 
       <div onMouseEnter={setMouse.on} onMouseLeave={setMouse.off}>
-        {mouse ? "the flag is on" : "hover me to turn on"}
+        {mouse ? 'the flag is on' : 'hover me to turn on'}
       </div>
     </>
   );
