@@ -1,6 +1,6 @@
 import { ToggleExample } from "../../components/atoms/toogle";
 
-const StoryBook = () => {
+const StoryBook = (props) => {
   return (
     <>
       <h1>Toggle Example: </h1>
