@@ -1,6 +1,6 @@
-import type { GetServerSideProps, NextPage } from "next";
-import prisma from "../lib/prisma";
-import styles from "../styles/Home.module.css";
+import type { GetServerSideProps, NextPage } from 'next';
+import prisma from '../lib/prisma';
+import styles from '../styles/Home.module.css';
 
 interface Props {
   count: number;
